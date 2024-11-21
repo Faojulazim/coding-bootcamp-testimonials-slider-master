@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+  </head>
+  <body
+    class="font-Inter relative min-h-[100dvh] flex justify-center items-center"
+  >
+    <div
+      class="pt-5 pb-10 px-5 lg:px-16 xl:px-20 overflow-hidden lg:flex lg:flex-row-reverse lg:items-center"
+    >
+      <div class="relative">
+        <img
+          class="w-[100%] lg:max-w-[600px] max-w-[500px] mx-auto"
+          src="images/pattern-bg.svg"
+          alt=""
+        />
+        <div
+          class="w-full absolute left-[50%] top-[50%] translate-y-[-50%] translate-x-[-50%]"
+        >
+          <div class="relative">
+            <img
+              class="w-[75%] xl:w-[100%] mx-auto max-w-[400px] shadow-[0px_5px_50px_10px_hsl(240_38%_20%/.2)] rounded-md"
+              src="images/image-tanya.jpg"
+              data-profiles=""
+              alt=""
+            />
+            <img
+              class="w-[75%] xl:w-[100%] hidden rounded-md mx-auto max-w-[400px] shadow-[0px_5px_50px_10px_hsl(240_38%_20%/.2)]"
+              src="images/image-john.jpg"
+              data-profiles=""
+              alt=""
+            />
+          </div>
+          <span class="w-full absolute lg:left-[30%] bottom-[-22px]">
+            <span
+              class="mx-auto lg:mx-0 bg-white w-[90px] px-3 py-[22px] h-[30px] rounded-full justify-between flex items-center"
+            >
+              <img id="previous" src="images/icon-prev.svg" alt="" />
+              <img id="next" src="images/icon-next.svg" alt="" />
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="relative">
+        <img
+          class="absolute w-[70px] left-[50%] top-[-30px] translate-x-[-50%] lg:top-[5px] lg:left-[20%] lg:translate-x-0 lg:w-[100px]"
+          src="images/pattern-quotes.svg"
+          alt=""
+        />
+        <div
+          class="mt-14 max-w-[700px] lg:mr-[-180px] lg:max-w-[750px] mx-auto"
+        >
+          <div class="text-center lg:text-start">
+            <p
+              class="text-darkBlue font-[300] sm:text-[20px] lg:text-[32px] text-lg lg:leading-[40px]"
+              data-para=""
+            >
+              “ I’ve been interested in coding for a while but never taken the
+              jump, until now. I couldn’t recommend this course enough. I’m now
+              in the job of my dreams and so excited about the future.”
+            </p>
+            <p
+              class="text-darkBlue font-[300] hidden lg:text-[32px] text-lg lg:leading-[40px]"
+              data-para=""
+            >
+              “ If you want to lay the best foundation possible I’d recommend
+              taking this course. The depth the instructors go into is
+              incredible. I now feel so confident about starting up as a
+              professional developer. ”
+            </p>
+            <div
+              class="mt-4 flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-y-1 lg:gap-x-2 lg:mt-7 text-[18px]"
+            >
+              <h2 class="text-darkBlue font-[700]" data-name="">
+                Tanya Sinclair
+              </h2>
+              <p class="text-grayishBlue leading-none font-[500]" data-post="">
+                UX Engineer
+              </p>
+              <h2 class="text-darkBlue font-[700] hidden" data-name="">
+                John Tarkpor
+              </h2>
+              <p
+                class="text-grayishBlue leading-none font-[500] hidden"
+                data-post=""
+              >
+                Junior Front-end Developer
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img
+      class="absolute bottom-0 z-[-1] w-full md:left-0 md:w-fit"
+      src="images/pattern-curve.svg"
+      alt=""
+    />
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
